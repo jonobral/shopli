@@ -1,0 +1,2 @@
+# shopli
+Automated Shopping List
