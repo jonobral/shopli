@@ -1,6 +1,7 @@
 """Automated Shopping List"""
 
 NOMBRE_SUPERMERCADO = "Supermercado Fuentes y Familia"
+IMPUESTO_DE_VENTAS = 1.13
 
 print ""
 print ""
@@ -11,7 +12,7 @@ print ""
 
 def ajustarimpuesto(precio):
     "Agrega el impuesto de ventas"
-    return int(precio) * 1.13
+    return int(precio) * IMPUESTO_DE_VENTAS
 
 with open('products_list.txt') as products:
     TOTAL = 0
