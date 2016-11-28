@@ -1,4 +1,3 @@
 natilla,1500
 queso,2200
 arroz,3400
-
