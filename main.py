@@ -34,6 +34,12 @@ with open('products_list.txt') as products:
     DINERO_PAGADO = input('Digite el monto con que desea pagar: ')
     # Tenemos que asegurarnos que el DINERO_PAGADO sea
     # mayor o igual al TOTAL de la factura
-    CAMBIO = DINERO_PAGADO - TOTAL
-    print 'El vuelto a entregar es: ' + str(CAMBIO)
+    if DINERO_PAGADO >= TOTAL:
+        CAMBIO = DINERO_PAGADO - TOTAL
+        print 'El vuelto a entregar es: ' + str(CAMBIO)
+        print 'Gracias, vuelva pronto!'
+    else:
+        print 'La cantidad de dinero no alcanza'
+        print 'Se necesitan ' + str(TOTAL - DINERO_PAGADO) + ' mas'
+        print 'Intente de nuevo'
     print ""
