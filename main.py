@@ -12,7 +12,7 @@ print ""
 
 def ajustarimpuesto(precio):
     "Agrega el impuesto de ventas"
-    return int(precio) * IMPUESTO_DE_VENTAS
+    return float(precio) * IMPUESTO_DE_VENTAS
 
 with open('products_list.txt') as products:
     TOTAL = 0
